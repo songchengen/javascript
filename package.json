@@ -1,0 +1,22 @@
+{
+  "name": "array-util",
+  "version": "1.0.0",
+  "description": "the array methods include map reduce filter",
+  "main": "index",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "array",
+    "map",
+    "reduce",
+    "filter"
+  ],
+  "author": "songchengen",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.13.0"
+  }
+}
