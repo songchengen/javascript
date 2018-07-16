@@ -12,8 +12,8 @@
  * @param arr
  * @param thisArg
  */
-export default (callback, arr, thisArg) => {
-  // 判断异常参数
+const forEach = (callback, arr, thisArg) => {
+  // 参数校验
   if (arr == null) throw new TypeError('arr is null or not defined');
   if (Object.prototype.toString.call(callback) !== '[object Function]') throw new TypeError(`${callback} is not a function`);
 
@@ -35,3 +35,5 @@ export default (callback, arr, thisArg) => {
     k += 1;
   }
 };
+
+module.exports = forEach;

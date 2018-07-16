@@ -11,7 +11,7 @@
  * @param {any} thisArg 回调函数的this指针
  * @returns {any[]} 映射数组
  */
-export default (callback, arr, thisArg) => {
+const map = (callback, arr, thisArg) => {
   // 参数教研
   if (arr == null) throw new TypeError('arr is null or not defined');
   if (Object.prototype.toString.call(callback) !== '[object Function]') throw new TypeError(`${callback} is not a function`);
@@ -34,14 +34,16 @@ export default (callback, arr, thisArg) => {
   return A;
 };
 
+module.exports = map;
+
 /**
- * ramda关于map实现
+ * ramda关于map的实现
  * @param fn
  * @param functor
  * @returns {any[]}
  * @private
-
-const _map = (fn, functor) => {
+ */
+module.exports.RamdaMap = (fn, functor) => {
   let k = 0;
   const len = functor.length;
   const result = Array(len);
@@ -51,4 +53,3 @@ const _map = (fn, functor) => {
   }
   return result;
 }
- */
