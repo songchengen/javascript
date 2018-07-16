@@ -1,16 +1,14 @@
 {
   "name": "array-util",
   "version": "1.0.0",
-  "description": "the array methods include map reduce filter",
+  "description": "一些JavaScript常见功能的实现",
   "main": "index",
   "scripts": {
     "test": "jest"
   },
   "keywords": [
-    "array",
-    "map",
-    "reduce",
-    "filter"
+    "JavaScript",
+    "fp"
   ],
   "author": "songchengen",
   "license": "MIT",
