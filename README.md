@@ -19,3 +19,9 @@
 [reduce](./array/reduce.js)
 
 [reduceRight](./array/reduceRight.js)
+
+## Function
+
+[call](./function/call.js)
+
+[apply](./function/apply.js)
