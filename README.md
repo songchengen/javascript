@@ -12,8 +12,10 @@
 
 [forEach(模拟原生实现)](./array/forEach.js)
 
-[filter(模拟原生实现)](./array/forEach.js)
+[filter(模拟原生实现)](./array/filter.js)
 
 [map(模拟原生实现)](./array/map.js)
 
 [reduce](./array/reduce.js)
+
+[reduceRight](./array/reduceRight.js)
