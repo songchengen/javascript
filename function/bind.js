@@ -27,7 +27,7 @@ module.exports = function (func, ctx) {
     obj.__proto__ = this.prototype;
     const ret = this.apply(obj, arguments);
     return typeof ret === 'object' ? ret : obj;
-  }
+  };
 
   const bound = function () {
     if (this instanceof bound) {
