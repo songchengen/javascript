@@ -28,6 +28,8 @@
 
 [apply](./function/apply.js)
 
+[bind](./function/bind.js)
+
 ## 备注
 
 测试用例大部分来源于[developer.mozilla.org](https://developer.mozilla.org/zh-CN/)
