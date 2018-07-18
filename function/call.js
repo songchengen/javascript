@@ -1,4 +1,4 @@
-/* eslint-disable no-param-reassign */
+/* eslint-disable no-param-reassign,no-undef */
 /**
  * @author songchengen
  * @date 2018/7/17
@@ -14,7 +14,7 @@
  * @returns {*}
  */
 module.exports = (f, thisArg, ...args) => {
-  thisArg = thisArg || this;
+  thisArg = thisArg || window;
   thisArg.f = f;
   const result = thisArg.f(...args);
   delete thisArg.f;

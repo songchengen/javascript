@@ -1,4 +1,4 @@
-/* eslint-disable no-param-reassign,prefer-rest-params,new-cap,no-proto,prefer-spread */
+/* eslint-disable no-param-reassign,prefer-rest-params,new-cap,no-proto,prefer-spread,no-undef */
 /**
  * @author songchengen
  * @date 2018/7/18
@@ -18,7 +18,7 @@ module.exports = function (func, ctx) {
     throw TypeError('Bind must be called on a function');
   }
 
-  ctx = ctx || this;
+  ctx = ctx || window;
 
   const args = [].slice.call(arguments, 2);
 
